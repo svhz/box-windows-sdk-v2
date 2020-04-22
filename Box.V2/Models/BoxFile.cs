@@ -25,7 +25,6 @@ namespace Box.V2.Models
         public const string FieldAllowedInviteeRoles = "allowed_invitee_roles";
         public const string FieldHasCollaborations = "has_collaborations";
         public const string FieldIsExternallyOwned = "is_externally_owned";
-        public const string FieldUploaderDisplayName = "uploader_display_name";
 
         /// <summary>
         /// The sha1 hash of this file
@@ -136,11 +135,5 @@ namespace Box.V2.Models
         /// </summary>
         [JsonProperty(PropertyName = FieldIsExternallyOwned)]
         public bool? IsExternallyOwned { get; protected set; }
-
-        /// <summary>
-        /// The user's name at the time of upload
-        /// </summary>
-        [JsonProperty(PropertyName = FieldUploaderDisplayName)]
-        public string UploaderDisplayName { get; private set; }
     }
 }
